@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMAHS | চন্দনপুর মনির আহমদ উচ্চ বিদ্যালয়</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+body{
+ font-family:"Noto Sans Bengali",Arial,sans-serif;
+ background:#f4f8f5;
+ color:#222;
+ line-height:1.7;
+}
+header{
+ background:#075b3b;
+ color:white;
+ padding:12px 5%;
+ display:flex;
+ align-items:center;
+ gap:15px;
+}
+.logo{
+ width:75px;
+ height:75px;
+ border-radius:50%;
+ background:white;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ overflow:hidden;
+ flex-shrink:0;
+}
+.logo img{
+ width:100%;
+ height:100%;
+ object-fit:contain;
+}
+.school-name h1{
+ font-size:23px;
+}
+.school-name p{
+ font-size:14px;
+}
+nav{
+ background:#06452f;
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ padding:12px 5px;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ padding:7px 12px;
+ font-size:14px;
+}
+nav a:hover{
+ background:#e3a91b;
+ border-radius:5px;
+}
+.hero{
+ min-height:400px;
+ background:
+ linear-gradient(#0008,#0009),
+ url("school.jpg") center/cover no-repeat;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ color:white;
+ padding:25px;
+}
+.hero h2{
+ font-size:32px;
+}
+.hero p{
+ font-size:18px;
+ margin-top:10px;
+}
+.container{
+ width:92%;
+ max-width:1150px;
+ margin:40px auto;
+}
+.section-title{
+ color:#075b3b;
+ text-align:center;
+ font-size:27px;
+ margin-bottom:25px;
+}
+.section-title:after{
+ content:"";
+ display:block;
+ width:65px;
+ height:4px;
+ background:#e3a91b;
+ margin:8px auto;
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px;
+}
+.card{
+ background:white;
+ padding:20px;
+ border-radius:12px;
+ box-shadow:0 3px 12px #0001;
+ text-align:center;
+}
+.card h3{
+ color:#075b3b;
+ margin-bottom:8px;
+}
+.number{
+ color:#df9b12;
+ font-size:32px;
+ font-weight:bold;
+}
+table{
+ width:100%;
+ border-collapse:collapse;
+ background:white;
+}
+th,td{
+ border:1px solid #ddd;
+ padding:12px;
+ text-align:center;
+}
+th{
+ background:#075b3b;
+ color:white;
+}
+tr:nth-child(even){
+ background:#eef7f1;
+}
+.notice{
+ background:white;
+ padding:18px;
+ margin-bottom:12px;
+ border-left:5px solid #e3a91b;
+ border-radius:7px;
+}
+.teacher img{
+ width:115px;
+ height:115px;
+ border-radius:50%;
+ object-fit:cover;
+ margin-bottom:10px;
+ background:#eee;
+}
+.event img,.event video{
+ width:100%;
+ height:190px;
+ object-fit:cover;
+ border-radius:8px;
+}
+.event h3{
+ margin-top:10px;
+}
+.contact{
+ background:#075b3b;
+ color:white;
+ padding:30px;
+ text-align:center;
+ border-radius:12px;
+}
+.contact p{
+ margin:8px;
+}
+.contact a{
+ color:#ffe18b;
+}
+.upload-box{
+ background:white;
+ padding:22px;
+ margin-top:22px;
+ text-align:center;
+ border-radius:10px;
+}
+input{
+ padding:10px;
+ margin:7px;
+ max-width:100%;
+}
+button{
+ background:#075b3b;
+ color:white;
+ border:0;
+ padding:11px 20px;
+ border-radius:5px;
+ cursor:pointer;
+}
+button:hover{
+ background:#0b7950;
+}
+footer{
+ background:#063c2a;
+ color:white;
+ text-align:center;
+ padding:22px;
+ margin-top:40px;
+}
+@media(max-width:600px){
+ header{padding:10px;}
+ .logo{width:58px;height:58px;}
+ .school-name h1{font-size:16px;}
+ nav a{font-size:12px;padding:6px;}
+ .hero{min-height:300px;}
+ .hero h2{font-size:24px;}
+ .section-title{font-size:23px;}
+ table{font-size:12px;}
+ th,td{padding:7px 3px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+ <div class="logo">
+  <img src="logo.png" alt="বিদ্যালয়ের লোগো">
+ </div>
+ <div class="school-name">
+  <h1>চন্দনপুর মনির আহমদ উচ্চ বিদ্যালয়</h1>
+  <p>মেঘনা, কুমিল্লা, বাংলাদেশ</p>
+ </div>
+</header>
+
+<!-- MENU -->
+<nav>
+ <a href="#home">হোম</a>
+ <a href="#students">শিক্ষার্থী</a>
+ <a href="#teachers">শিক্ষক</a>
+ <a href="#notice">নোটিশ</a>
+ <a href="#events">ইভেন্ট</a>
+ <a href="#result">SSC রেজাল্ট</a>
+ <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+ <div>
+  <h2>স্বাগতম</h2>
+  <h2>চন্দনপুর মনির আহমদ উচ্চ বিদ্যালয়ে</h2>
+  <p>শিক্ষাই জাতির মেরুদণ্ড</p>
+  <p>মেঘনা, কুমিল্লা</p>
+ </div>
+</section>
+
+<!-- STUDENTS -->
+<section class="container" id="students">
+ <h2 class="section-title">শিক্ষার্থী সংখ্যা</h2>
+
+ <div class="cards">
+  <div class="card">
+   <h3>সর্বমোট শিক্ষার্থী</h3>
+   <div class="number" id="grandTotal">0</div>
+  </div>
+ </div>
+
+ <br>
+
+ <table>
+  <thead>
+   <tr>
+    <th>শ্রেণি</th>
+    <th>ছাত্র A</th>
+    <th>ছাত্রী B</th>
+    <th>মোট</th>
+   </tr>
+  </thead>
+  <tbody id="studentTable"></tbody>
+ </table>
+</section>
+
+<!-- TEACHERS -->
+<section class="container" id="teachers">
+ <h2 class="section-title">আমাদের শিক্ষকবৃন্দ</h2>
+
+ <div class="cards">
+  <div class="card teacher">
+   <img src="teacher1.jpg" alt="প্রধান শিক্ষক">
+   <h3>শিক্ষকের নাম</h3>
+   <p>প্রধান শিক্ষক</p>
+   <p>বিষয়: প্রযোজ্য বিষয়</p>
+  </div>
+
+  <div class="card teacher">
+   <img src="teacher2.jpg" alt="সহকারী শিক্ষক">
+   <h3>শিক্ষকের নাম</h3>
+   <p>সহকারী শিক্ষক</p>
+   <p>বিষয়: প্রযোজ্য বিষয়</p>
+  </div>
+ </div>
+</section>
+
+<!-- NOTICE -->
+<section class="container" id="notice">
+ <h2 class="section-title">নোটিশ বোর্ড</h2>
+
+ <div id="noticeList">
+  <div class="notice">
+   <h3>জরুরি নোটিশ</h3>
+   <p>এখানে বিদ্যালয়ের নোটিশ প্রকাশ করা হবে।</p>
+  </div>
+ </div>
+</section>
+
+<!-- EVENTS -->
+<section class="container" id="events">
+ <h2 class="section-title">Events & Gallery</h2>
+
+ <div class="cards" id="eventList">
+  <div class="card">
+   <h3>বিদ্যালয়ের অনুষ্ঠান</h3>
+   <p>বিভিন্ন অনুষ্ঠান ও কার্যক্রমের ছবি এখানে থাকবে।</p>
+  </div>
+ </div>
+
+ <div class="upload-box">
+  <h3>ইভেন্টের ছবি বা ভিডিও যুক্ত করুন</h3>
+  <input type="text" id="eventTitle"
+   placeholder="অনুষ্ঠানের নাম">
+  <br>
+  <input type="file" id="eventFile"
+   accept="image/*,video/*">
+  <br>
+  <button onclick="addEvent()">ছবি / ভিডিও দেখান</button>
+  <p style="font-size:12px;color:#777">
+   এটি আপাতত স্থানীয় Demo Upload।
+   স্থায়ী আপলোডের জন্য Cloudinary যুক্ত করতে হবে।
+  </p>
+ </div>
+</section>
+
+<!-- SSC RESULT -->
+<section class="container" id="result">
+ <h2 class="section-title">SSC Result Corner</h2>
+
+ <div class="cards">
+  <div class="card">
+   <h3>SSC পরীক্ষার ফলাফল</h3>
+   <p>বিদ্যালয়ের SSC পরীক্ষার ফলাফল ও সাফল্য এখানে প্রকাশিত হবে।</p>
+   <p>পরীক্ষার বছর: ২০২৬</p>
+   <p>ফলাফল শিগগিরই প্রকাশিত হবে।</p>
+  </div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section class="container" id="contact">
+ <h2 class="section-title">Contact With Us</h2>
+
+ <div class="contact">
+  <h2>চন্দনপুর মনির আহমদ উচ্চ বিদ্যালয়</h2>
+  <p>ঠিকানা: মেঘনা, কুমিল্লা, বাংলাদেশ</p>
+  <p>মোবাইল: বিদ্যালয়ের নম্বর যুক্ত করুন</p>
+  <p>ইমেইল: বিদ্যালয়ের ইমেইল যুক্ত করুন</p>
+  <p>
+   Facebook:
+   <a href="#" target="_blank">Facebook Page</a>
+  </p>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+ <p>Copyright © chandanpur m a high school</p>
+ <p>Developer: Naimul</p>
+ <p>All Rights Reserved</p>
+</footer>
+
+<script>
+
+// শিক্ষার্থীর প্রকৃত সংখ্যা এখানে বসাবেন
+// A = ছাত্র, B = ছাত্রী
+
+const students = [
+ {name:"ষষ্ঠ শ্রেণি", A:0, B:0},
+ {name:"সপ্তম শ্রেণি", A:0, B:0},
+ {name:"অষ্টম শ্রেণি", A:0, B:0},
+ {name:"নবম শ্রেণি", A:0, B:0},
+ {name:"দশম শ্রেণি", A:0, B:0}
+];
+
+let total = 0;
+
+students.forEach(s=>{
+ let sum = s.A + s.B;
+ total += sum;
+
+ document.getElementById("studentTable").innerHTML += `
+ <tr>
+  <td>${s.name}</td>
+  <td>${s.A}</td>
+  <td>${s.B}</td>
+  <td>${sum}</td>
+ </tr>
+ `;
+});
+
+document.getElementById("grandTotal").innerText = total;
+
+
+// Event Gallery Demo Upload
+
+function addEvent(){
+
+ const title = document.getElementById("eventTitle").value;
+ const file = document.getElementById("eventFile").files[0];
+
+ if(!title || !file){
+  alert("অনুষ্ঠানের নাম এবং ছবি/ভিডিও নির্বাচন করুন");
+  return;
+ }
+
+ if(!file.type.startsWith("image/") &&
+    !file.type.startsWith("video/")){
+  alert("শুধু ছবি অথবা ভিডিও নির্বাচন করুন");
+  return;
+ }
+
+ const url = URL.createObjectURL(file);
+
+ const box = document.createElement("div");
+ box.className = "card event";
+
+ const media = document.createElement(
+  file.type.startsWith("video/") ? "video" : "img"
+ );
+
+ media.src = url;
+
+ if(media.tagName === "VIDEO"){
+  media.controls = true;
+ }else{
+  media.alt = title;
+ }
+
+ const heading = document.createElement("h3");
+ heading.textContent = title;
+
+ box.appendChild(media);
+ box.appendChild(heading);
+
+ document.getElementById("eventList").prepend(box);
+
+ document.getElementById("eventTitle").value = "";
+ document.getElementById("eventFile").value = "";
+}
+
+</script>
+
+</body>
+</html>
